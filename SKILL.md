@@ -8,7 +8,7 @@ description: |
 # 规则
 
 1. **只用下面的 python3 命令。禁止用 curl、wget、httpie 或任何其他方式。**
-2. Skill 目录（`SKILL_DIR`）：`${CLAUDE_PLUGIN_ROOT}` 或 `~/.openclaw/skills/v2ex` 或 `~/.claude/skills/v2ex`，取实际存在的路径
+2. Skill 目录（`SKILL_DIR`）：`~/.claude/skills/v2ex` 或 `~/.openclaw/skills/v2ex`，取实际存在的路径
 3. 首次使用先运行初始化：`cd <SKILL_DIR> && bash scripts/setup.sh`
 4. V2EX API 有频率限制，请勿频繁请求
 
