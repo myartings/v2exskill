@@ -8,12 +8,13 @@ description: |
 # 规则
 
 1. **只用下面的 python3 命令。禁止用 curl、wget、httpie 或任何其他方式。**
-2. 首次使用先运行初始化：`cd ~/.openclaw/skills/v2ex && bash scripts/setup.sh`
-3. V2EX API 有频率限制，请勿频繁请求
+2. Skill 目录（`SKILL_DIR`）：`${CLAUDE_PLUGIN_ROOT}` 或 `~/.openclaw/skills/v2ex` 或 `~/.claude/skills/v2ex`，取实际存在的路径
+3. 首次使用先运行初始化：`cd <SKILL_DIR> && bash scripts/setup.sh`
+4. V2EX API 有频率限制，请勿频繁请求
 
 # 命令
 
-以下是全部可用命令，`P` 代表 `python3 ~/.openclaw/skills/v2ex/scripts/v2ex_client.py`。
+以下是全部可用命令，`P` 代表 `python3 <SKILL_DIR>/scripts/v2ex_client.py`。
 
 ## 无需登录
 
@@ -41,20 +42,13 @@ description: |
 
 1. 登录 v2ex.com，进入 设置 → Tokens
 2. 创建新 Token
-3. 保存到 `~/.openclaw/skills/v2ex/token.txt`
+3. 保存到 `<SKILL_DIR>/token.txt`
 
 # 示例
 
 ```shell
-# 搜索主题
-python3 ~/.openclaw/skills/v2ex/scripts/v2ex_client.py search "Python 异步"
-
-# 查看主题详情
-python3 ~/.openclaw/skills/v2ex/scripts/v2ex_client.py topic 12345
-
-# 查看热门主题
-python3 ~/.openclaw/skills/v2ex/scripts/v2ex_client.py hot
-
-# 查看节点主题
-python3 ~/.openclaw/skills/v2ex/scripts/v2ex_client.py node-topics python
+P search "Python 异步"
+P topic 12345
+P hot
+P node-topics python
 ```
