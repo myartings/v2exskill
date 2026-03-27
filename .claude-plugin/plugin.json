@@ -1,0 +1,9 @@
+{
+  "name": "v2ex",
+  "version": "1.0.0",
+  "description": "V2EX 社区助手：搜索主题、浏览热门、查看回复",
+  "author": { "name": "myartings" },
+  "repository": "https://github.com/myartings/v2exskill",
+  "license": "MIT",
+  "keywords": ["v2ex", "V站", "技术社区"]
+}
